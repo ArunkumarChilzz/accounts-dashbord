@@ -11,14 +11,14 @@ st.set_page_config(page_title="SLA Executive Dashboard", layout="wide")
 # ---------------------------------------------------
 @st.cache_resource
 def connect():
-    creds = Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"],
-        scopes=[
-            "https://www.googleapis.com/auth/spreadsheets",
-            "https://www.googleapis.com/auth/drive"
-        ],
-    )
-    return gspread.authorize(creds)
+    creds = Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=[
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive",
+        ],
+    )
+    return gspread.authorize(creds)
 
 
 
