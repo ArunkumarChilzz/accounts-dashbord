@@ -194,4 +194,4 @@ fig_heat = px.imshow(
     title=":fire: RCA vs Month Heatmap"
 )
 
-st.plotly_chart(fig_heat, use_container_width=True)[5:10 PM]
+st.plotly_chart(fig_heat, use_container_width=True)
